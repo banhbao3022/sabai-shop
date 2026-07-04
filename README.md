@@ -171,10 +171,13 @@ Zero config. Import the repo; the platform auto-detects Next.js.
 
 - **Build command:** `npm run build`
 - **Output:** framework default (leave as detected)
-- **Env vars:** optionally set `NEXT_PUBLIC_ADMIN_PASSCODE`
+- **Env vars:** optionally set `NEXT_PUBLIC_ADMIN_PASSCODE` and
+  `NEXT_PUBLIC_SITE_URL` (for canonical URLs/sitemap/OpenGraph)
 
-Update `siteConfig.url` in `src/lib/config.ts` to your final domain so canonical
-URLs, the sitemap and OpenGraph tags are correct.
+Examples:
+
+- Vercel default domain: `NEXT_PUBLIC_SITE_URL=https://sabai-shop.vercel.app`
+- GitHub Pages project site: `NEXT_PUBLIC_SITE_URL=https://<user>.github.io/<repo>`
 
 ### GitHub Pages (static export — free, no server)
 

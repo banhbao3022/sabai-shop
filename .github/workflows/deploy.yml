@@ -39,6 +39,7 @@ jobs:
       - name: Build static export
         env:
           NEXT_EXPORT: "true"
+          NEXT_PUBLIC_SITE_URL: "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
           # Project sites live under https://<user>.github.io/<repo>, so the
           # app must know its sub-path. For a user/custom-domain site, clear
           # this by setting NEXT_PUBLIC_BASE_PATH to an empty string.

@@ -44,6 +44,9 @@ export interface SiteConfig {
   };
 }
 
+const resolvedSiteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://sabai-shop.vercel.app";
+
 export const siteConfig: SiteConfig = {
   name: "Sabai Shop",
   nameLo: "ຮ້ານ ສະບາຍ",
@@ -53,7 +56,7 @@ export const siteConfig: SiteConfig = {
     "Sabai Shop is a small demo storefront showcasing skincare, cosmetics and cute lifestyle goods. Browse the catalog, add items to your cart and place an order — no account required.",
   aboutLo:
     "Sabai Shop ເປັນຮ້ານຕົວຢ່າງ ຂາຍສິນຄ້າບຳລຸງຜິວ, ເຄື່ອງສຳອາງ ແລະ ຂອງໃຊ້ໜ້າຮັກ. ເລືອກຊື້ໄດ້ເລີຍ ບໍ່ຕ້ອງສະໝັກສະມາຊິກ.",
-  url: "https://sabai-shop.example.com",
+  url: resolvedSiteUrl,
   ogImage: "/og.svg",
   currency: {
     code: "LAK",
