@@ -5,6 +5,9 @@ Facebook / Page365-style single-vendor stores. It ships with a curated sample
 catalog, a shopping cart, a no-payment checkout, a lightweight **admin panel**
 (products + orders), full **English / Lao** bilingual UI, dark mode, and SEO.
 
+- **Live demo:** https://sabai-shop.vercel.app
+- **Admin:** https://sabai-shop.vercel.app/admin (passcode: `admin`)
+
 > **This is a portfolio/demo clone.** The brand ("Sabai Shop"), products, prices,
 > phone number and email are all **placeholders** — not a real business. There is
 > no online payment and no real backend; orders are saved in the browser.
